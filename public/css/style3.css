@@ -1,0 +1,92 @@
+
+
+
+
+
+
+
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form Container */
+  form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 8px rgba(66, 165, 245, 0.5);
+  }
+  
+  /* Textarea Styles */
+  textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  /* Submit Button */
+  button {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    form {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }

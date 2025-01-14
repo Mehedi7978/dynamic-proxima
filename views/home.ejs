@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Home</title>
+</head>
+<link rel="stylesheet" href="./css/style2.css">
+<body>
+  <h1>Blog Home</h1>
+  <% if (session && session.userId) { %>
+    <a href="/profile">Your Profile</a> | <a href="/logout">Logout</a> | <a href="/new-post">New Post</a>
+  <% } else { %>
+    <a href="/signup">Sign Up</a> | <a href="/login">Login</a>
+  <% } %>
+  <hr>
+  <% blogs.forEach(blog => { %>
+    <div>
+      <img src="<%= blog.thumbnail %>" alt="Thumbnail" style="width: 200px; height: auto;">
+      <h2><%= blog.title %></h2>
+      <p><%= blog.content %></p>
+      <small>
+        Posted by <%= blog.creator ? blog.creator.username : 'Unknown' %> 
+        on <%= blog.createdAt.toLocaleString()   %>
+      </small>
+      
+      
+    </div>
+    <hr>
+  <% }) %>
+
+
+
+
+  
+<script type="text/javascript">
+	atOptions = {
+		'key' : '6b94d740d372c9fea7dd2281bd810d56',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/6b94d740d372c9fea7dd2281bd810d56/invoke.js"></script>
+
+<script type='text/javascript' src='//pl25563223.profitablecpmrate.com/a2/96/61/a296610de96dfd174a8a08cefa51aefd.js'></script>
+
+</body>
+</html>
